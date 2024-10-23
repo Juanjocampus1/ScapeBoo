@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Github from '../components/Github.astro';
+import Card from '../components/Card.astro';
 ---
 
 <Layout title="Bienvenido a Mi Escape Room">
@@ -12,28 +13,9 @@ import Github from '../components/Github.astro';
 	</header>
     <section class="container mx-auto text-center">
 		<h2 class="text-4xl font-bold text-white spooky-font mb-8">Actividades de Halloween</h2>
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-		<!-- Card 1 -->
-		<div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-			<img src="https://example.com/pumpkin.png" alt="Calabazas" class="w-full h-40 object-cover rounded-lg mb-4">
-			<h3 class="text-2xl text-orange-400 spooky-font">Tallado de Calabazas</h3>
-			<p class="mt-2 text-gray-400">Saca tu creatividad y crea las calabazas más terroríficas.</p>
-		</div>
-
-		<!-- Card 2 -->
-		<div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-			<img src="https://example.com/ghost.png" alt="Casa Embrujada" class="w-full h-40 object-cover rounded-lg mb-4">
-			<h3 class="text-2xl text-orange-400 spooky-font">Casa Embrujada</h3>
-			<p class="mt-2 text-gray-400">Atrévete a recorrer la casa más escalofriante de la ciudad.</p>
-		</div>
-
-		<!-- Card 3 -->
-		<div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-			<img src="https://example.com/candy.png" alt="Dulces o Travesura" class="w-full h-40 object-cover rounded-lg mb-4">
-			<h3 class="text-2xl text-orange-400 spooky-font">Dulces o Travesura</h3>
-			<p class="mt-2 text-gray-400">Recorre el vecindario y consigue todos los dulces que puedas.</p>
-		</div>
-		</div>
+		<Card cardtitle='Scape Room Unico' description='Una experiencia que tu y los tuyos jamas podreis olvidar en vuestras vidas hahahahahaha' image='../../public/1card.jpg'/>
+		<Card cardtitle='Scape Room Unico' description='Una experiencia que tu y los tuyos jamas podreis olvidar en vuestras vidas hahahahahaha' image='../../public/1card.jpg'/>
+		<Card cardtitle='Scape Room Unico' description='Una experiencia que tu y los tuyos jamas podreis olvidar en vuestras vidas hahahahahaha' image='../../public/1card.jpg'/>
 	</section>
 
 	<!-- Aquí se agregan los iconos de redes sociales al footer -->
