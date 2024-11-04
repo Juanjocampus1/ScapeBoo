@@ -1,0 +1,50 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Modo oscuro por defecto */
+body.dark-mode {
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: #FFDDC1;
+    text-shadow: 0 0 5px rgba(255, 221, 193, 0.7);
+}
+
+body.dark-mode p, body.dark-mode li, body.dark-mode a {
+    color: #E0E0E0;
+}
+
+/* Modo claro */
+body.light-mode {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+body.light-mode h1, body.light-mode h2, body.light-mode h3 {
+    color: #333333;
+    text-shadow: none;
+}
+
+body.light-mode p, body.light-mode li, body.light-mode a {
+    color: #333333;
+}
+
+/* Estilos de Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: rgba(20, 20, 20, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px) saturate(180%);
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScapeBoo - ¿Te Atreves a Entrar?</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+</head>
+<body class="light-mode">
+
+    <!-- Header con logo y barra de navegación -->
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo_2.jpeg" alt="Logo de ScapeBoo">
+            <h1>ScapeBoo</h1>
+        </div>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#intro">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#minigame">Minijuego</a></li>
+                <li><a href="#rooms">Habitaciones</a></li>
+                <li><a href="/pages/contact.html">Contacto</a></li>
+                <li>
+                    <button id="dark-mode-toggle" aria-pressed="false" aria-label="Alternar modo oscuro">🌙</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de introducción -->
+    <section id="intro" class="intro">
+        <h1 class="intro-title">Bienvenido a ScapeBoo</h1>
+        <p class="intro-text">¿Tienes el valor de enfrentarte a lo desconocido? Explora nuestras habitaciones y encuentra una forma de escapar... si puedes.</p>
+        <a href="#rooms" class="cta-button">Explora las Habitaciones</a>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="about">
+        <div class="about-container">
+            <h2>Sobre Nosotros</h2>
+            <p>En <span class="highlight">ScapeBoo</span>, somos un equipo apasionado por el misterio, el horror y la creación de experiencias inmersivas que pondrán a prueba tus miedos. Nos especializamos en desarrollar desafíos únicos, donde cada habitación está diseñada para transportarte a una nueva realidad.</p>
+            <p>Nuestro objetivo es ofrecerte una experiencia de escape room que nunca olvidarás... si logras salir. ¿Estás preparado para enfrentarte a tus peores pesadillas?</p>
+        </div>
+    </section>
+    
+
+    <!-- Sección del Minijuego mejorado -->
+    <section id="minigame">
+        <h2>El Desafío de las Sombras</h2>
+        <p>Resuelve los acertijos para obtener pistas cruciales...</p>
+        <div id="game-container">
+            <div id="game-board">
+                <p>Las sombras te observan... Encuentra el primer código:</p>
+                <input type="text" id="code-input" placeholder="Introduce el código aquí">
+                <button onclick="checkCode()">Verificar</button>
+            </div>
+            <div id="game-message"></div>
+        </div>
+    </section>
+
+    <!-- Sección de Habitaciones (Placeholder) -->
+    <section id="rooms">
+        <h2>Habitaciones</h2>
+        <p>Descubre las habitaciones más aterradoras y misteriosas...</p>
+        <div class="room-grid">
+            <div class="room-card">
+                <img src="assets/images/room_1.jpg" alt="Habitación 1" class="room-image">
+                <h3>Habitación 1</h3>
+                <p>Una experiencia aterradora que no olvidarás.</p>
+            </div>
+            <div class="room-card">
+                <img src="assets/images/room_2.jpg" alt="Habitación 2" class="room-image">
+                <h3>Habitación 2</h3>
+                <p>Enfréntate a tus miedos en este oscuro laberinto.</p>
+            </div>
+            <div class="room-card">
+                <img src="assets/images/room_3.jpg" alt="Habitación 3" class="room-image">
+                <h3>Habitación 3</h3>
+                <p>Un lugar lleno de misterio y secretos por descubrir.</p>
+            </div>
+            <div class="room-card">
+                <img src="assets/images/room_4.webp" alt="Habitación 4" class="room-image">
+                <h3>Habitación 4</h3>
+                <p>¿Te atreves a entrar en esta escalofriante habitación?</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 ScapeBoo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/dark-mode-toggle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/minigame.js"></script>
+</body>
+</html>
