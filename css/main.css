@@ -8,7 +8,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #121212;
-    color: #FFFFFF;
+    color: #FFFFFF;     
     margin: 0;
     padding: 0;
 }
@@ -332,9 +332,13 @@ footer p a:hover {
 }
 
 .room-card p {
-    color: #E0E0E0; /* Color del texto descriptivo */
+    color: #fcfcfc; /* Color del texto descriptivo */
     font-size: 1em; /* Tamaño de fuente estándar */
     line-height: 1.5; /* Mejora la legibilidad */
+}
+
+.room-text{
+    color: #fcfcfc;
 }
 
 .room-card:hover {

@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - ScapeBoo</title>
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/dark-mode.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="/css/contact-dark.css">
 </head>
 <body>
     <header>
@@ -18,7 +17,7 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="#about">Sobre Nosotros</a></li>
                 <li><a href="#minigame">Minijuego</a></li>
-                <li><a href="#rooms">Habitaciones</a></li>
+                <li><a href="../pages/rooms.html">Habitaciones</a></li>
                 <li><a href="#contact">Contacto</a></li>
                 <li>
                     <button id="dark-mode-toggle" aria-pressed="false" aria-label="Alternar modo oscuro">🌙</button>
@@ -28,7 +27,7 @@
     </header>
 
     <section id="contact">
-        <h2>Contáctanos</h2>
+        <h2 class="tittle">Contáctanos</h2>
         <p>Si tienes preguntas, comentarios o deseas reservar una fecha, completa el siguiente formulario y te responderemos lo antes posible.</p>
         
         <form id="contact-form" action="submit_form.php" method="POST">
@@ -64,22 +63,6 @@
         </form>
     </section>
 
-    <script>
-        // Manejo del formulario (opcional)
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            // Aquí puedes agregar validaciones adicionales si es necesario
-            const dateInput = document.getElementById("date");
-            const currentDate = new Date();
-            const selectedDate = new Date(dateInput.value);
-
-            // Verificar que la fecha seleccionada sea al menos para mañana
-            if (selectedDate <= currentDate) {
-                event.preventDefault();
-                alert("Por favor, selecciona una fecha válida para la reserva.");
-            }
-        });
-    </script>
-
-    <script src="js/dark-mode-toggle.js"></script>
+    <script src="../js/contact-mode-toggle.js"></script>
 </body>
 </html>

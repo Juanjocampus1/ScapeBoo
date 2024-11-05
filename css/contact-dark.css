@@ -1,21 +1,24 @@
+/* Fuentes y Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@300;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #ff0000;
-    color: #FFFFFF;
     margin: 0;
     padding: 0;
+    background-color: #121212; /* Fondo oscuro por defecto */
+    color: #FFFFFF; /* Texto claro por defecto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-h1, h2, h3 {
-    color: #FFDDC1;
-    text-shadow: 0 0 5px rgba(255, 221, 193, 0.7);
-}
-
-p, li, a {
-    color: #E0E0E0;
-}
-
-/* Estilos de Header */
 header {
     display: flex;
     align-items: center;
@@ -29,6 +32,7 @@ header {
     top: 0;
     z-index: 10;
     color: #E0E0E0;
+    width: 100%;
 }
 
 .logo {
@@ -98,23 +102,6 @@ header ul li a:hover::before {
     transform: translateY(0);
 }
 
-#dark-mode-toggle {
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
-    color: #E0E0E0;
-    font-size: 1.5em;
-    padding: 8px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-}
-
-#dark-mode-toggle:hover {
-    background: rgba(255, 255, 255, 0.6);
-    color: #121212;
-    box-shadow: 0 0 10px #FF4444, 0 0 20px #FF6666;
-}
-
 #contact {
     padding: 60px 20px;
     background: rgba(20, 20, 20, 0.9);
@@ -122,31 +109,27 @@ header ul li a:hover::before {
     text-align: center;
     box-shadow: 0 0 15px rgba(12, 12, 12, 0.8), 0 0 20px rgba(12, 12, 12, 0.6);
     border-radius: 10px;
-    max-width: 600px; /* Limita el ancho del formulario */
-    margin: auto;
-    margin-top: 1%;
-    margin-bottom: 1%; /* Centra el formulario horizontalmente */
-}
-
-
-
-#contact h2 {
-    font-size: 2.5em; /* Aumenta el tamaño del encabezado */
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px rgba(255, 68, 68, 0.7);
-}
-
-#contact p {
-    margin-bottom: 30px;
-    color: #E0E0E0;
+    max-width: 900px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-group {
+    width: 100%;
     padding-right: 3.75%;
     margin-bottom: 20px;
-    text-align: left; /* Alinea el texto a la izquierda */
-    
+    text-align: left;
 }
+
+#contact-form{
+    width: 60%;
+    padding-left: 4%;
+    padding-right: 3.5%;
+}
+
 
 label {
     display: block;
@@ -193,40 +176,19 @@ select:focus {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño al hacer hover */
 }
 
-/* Estilos para el modo claro */
-body.light-mode {
-    background-color: #f0f0f0; /* Fondo claro para el cuerpo */
-    color: #000; /* Texto oscuro */
+#dark-mode-toggle {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #E0E0E0;
+    font-size: 1.5em;
+    padding: 8px;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-body.light-mode label {
-    color: #000; /* Color oscuro para las etiquetas */
-}
-
-body.light-mode input[type="text"],
-body.light-mode input[type="email"],
-body.light-mode input[type="date"],
-body.light-mode textarea,
-body.light-mode select {
-    background-color: #fff; /* Fondo blanco para los campos de entrada */
-    color: #000; /* Texto oscuro */
-    border: 2px solid #ccc; /* Borde gris claro */
-}
-
-body.light-mode input[type="text"]:focus,
-body.light-mode input[type="email"]:focus,
-body.light-mode input[type="date"]:focus,
-body.light-mode textarea:focus,
-body.light-mode select:focus {
-    border-color: #000; /* Cambia el color del borde al hacer foco */
-    outline: none; /* Elimina el contorno predeterminado */
-}
-
-body.light-mode .submit-button {
-    background-color: #4CAF50; /* Fondo verde para el botón */
-    color: #fff; /* Texto blanco */
-}
-
-body.light-mode .submit-button:hover {
-    background-color: #45a049; /* Fondo verde oscuro al pasar el ratón */
+#dark-mode-toggle:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: #121212;
+    box-shadow: 0 0 10px #FF4444, 0 0 20px #FF6666;
 }
